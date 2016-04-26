@@ -183,6 +183,7 @@ GEM
       railties (>= 3.0.0, < 5.1.0)
     method_source (0.8.2)
     mime-types (2.99.1)
+    mime-types-data (3.2016.0221)
     mimemagic (0.3.1)
     mini_portile2 (2.0.0)
     minitest (5.8.4)
@@ -260,10 +261,6 @@ GEM
     pry-rails (0.3.4)
       pry (>= 0.9.10)
     puma (3.4.0)
-<<<<<<< HEAD
-=======
-    puma (3.4.0-java)
->>>>>>> errbit/master
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.4)
