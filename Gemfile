@@ -7,6 +7,7 @@ send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 gem 'actionmailer', RAILS_VERSION
 gem 'actionpack', RAILS_VERSION
 gem 'railties', RAILS_VERSION
+gem 'sprockets', '3.5.2'
 
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
