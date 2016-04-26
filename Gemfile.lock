@@ -260,6 +260,10 @@ GEM
     pry-rails (0.3.4)
       pry (>= 0.9.10)
     puma (3.4.0)
+<<<<<<< HEAD
+=======
+    puma (3.4.0-java)
+>>>>>>> errbit/master
     quiet_assets (1.1.0)
       railties (>= 3.1, < 5.0)
     rack (1.6.4)
