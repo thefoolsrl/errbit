@@ -13,6 +13,7 @@ set :application, 'errbit'
 set :repo_url, 'https://github.com/errbit/errbit.git'
 set :branch, ENV['branch'] || 'master'
 set :deploy_to, '/home/deployer/apps/errbit'
+
 set :keep_releases, 5
 
 set :pty, true
