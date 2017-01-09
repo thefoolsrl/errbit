@@ -7,7 +7,6 @@ send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 gem 'actionmailer', RAILS_VERSION
 gem 'actionpack', RAILS_VERSION
 gem 'railties', RAILS_VERSION
-gem 'sprockets', '~> 2.8'
 
 gem 'actionmailer_inline_css'
 gem 'decent_exposure'
@@ -89,14 +88,22 @@ group :test do
   gem 'fabrication'
   gem 'capybara'
   gem 'poltergeist'
+  gem 'phantomjs'
   gem 'launchy'
   gem 'email_spec'
   gem 'timecop'
   gem 'coveralls', require: false
 end
 
+group :heroku, :production do
+  gem 'rails_12factor', require: ENV.key?("HEROKU")
+end
+
+group :no_docker, :test, :development do
+ gem 'therubyracer', :platform => :ruby # C Ruby (MRI) or Rubinius, but NOT Windows
+end
+
 gem 'puma'
-gem 'therubyracer', platform: :ruby # C Ruby (MRI) or Rubinius, but NOT Windows
 gem 'sass-rails'
 gem 'uglifier'
 # We can't upgrade because not compatible to jquery >= 1.9.
@@ -104,6 +111,8 @@ gem 'uglifier'
 gem 'jquery-rails', '~> 2.1.4'
 gem 'pjax_rails'
 gem 'underscore-rails'
+
+gem 'sucker_punch'
 
 ENV['USER_GEMFILE'] ||= './UserGemfile'
 eval_gemfile ENV['USER_GEMFILE'] if File.exist?(ENV['USER_GEMFILE'])
