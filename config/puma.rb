@@ -1,5 +1,6 @@
 # https://devcenter.heroku.com/articles/deploying-rails-applications-with-the-puma-web-server
-ENV["BUNDLE_GEMFILE"] = "/home/deployer/apps/errbit/Gemfile"
+#ENV["BUNDLE_GEMFILE"] = "/home/deployer/apps/errbit/Gemfile"
+pidfile "/home/deployer/apps/errbit/tmp/pids/puma.pid"
 
 workers Integer(ENV['WEB_CONCURRENCY'] || 2)
 threads_count = Integer(ENV['MAX_THREADS'] || 5)
