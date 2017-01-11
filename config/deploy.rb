@@ -1,3 +1,4 @@
+require 'capistrano/puma'
 # Deploy Config
 # =============
 #
@@ -7,7 +8,7 @@
 # to ./docs/deployment/capistrano.md for more info
 
 # config valid only for current version of Capistrano
-lock '3.4.0'
+lock '3.5.0'
 
 set :application, 'errbit'
 set :repo_url, 'https://github.com/thefoolsrl/errbit.git'
