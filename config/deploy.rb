@@ -1,4 +1,3 @@
-require 'capistrano/puma'
 # Deploy Config
 # =============
 #
