@@ -454,7 +454,7 @@ DEPENDENCIES
   better_errors (~> 2.1)
   binding_of_caller (~> 0.7)
   campy (~> 1.0)
-  capistrano (~> 3.4)
+  capistrano (~> 3.11)
   capistrano-bundler (~> 1.1)
   capistrano-rails (~> 1.1)
   capistrano-rbenv (~> 2.0)
