@@ -7,6 +7,7 @@ send :ruby, ENV['GEMFILE_RUBY_VERSION'] if ENV['GEMFILE_RUBY_VERSION']
 gem 'actionmailer', RAILS_VERSION
 gem 'actionpack', RAILS_VERSION
 gem 'railties', RAILS_VERSION
+gem 'rails-html-sanitizer', '~> 1.0.3'
 
 gem 'actionmailer_inline_css', "~> 1.5"
 gem 'decent_exposure', "~> 2.3"
@@ -77,6 +78,9 @@ group :development do
   gem 'better_errors', "~> 2.1"
   gem 'binding_of_caller', "~> 0.7", platform: 'ruby'
   gem 'meta_request', "~> 0.3"
+
+  gem 'brakeman', require: false
+  gem 'bundle-audit', require: false
 end
 
 group :test do
@@ -108,7 +112,7 @@ gem 'sass-rails', "~> 5.0"
 gem 'uglifier', "~> 2.7"
 # We can't upgrade because not compatible to jquery >= 1.9.
 # To do that, we need fix the rails.js
-gem 'jquery-rails', '~> 2.1'
+gem 'jquery-rails', '~> 3.1.3'
 gem 'pjax_rails', "~> 0.4"
 gem 'underscore-rails', "~> 1.8"
 
