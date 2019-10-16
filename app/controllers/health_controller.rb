@@ -1,4 +1,5 @@
 class HealthController < ActionController::Base
+  protect_from_forgery with: :exception
   def readiness
     check_results = [run_mongo_check]
     all_ok = check_results.all? do |check|
