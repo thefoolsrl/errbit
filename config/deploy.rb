@@ -36,7 +36,7 @@ set :linked_dirs, fetch(:linked_dirs, []) + %w(
 # set :rbenv_ruby, File.read(File.expand_path('../../.ruby-version', __FILE__)).strip
 # set :rbenv_roles, :all
 
-set :rvm_ruby_version, '2.3.0'
+set :rvm_ruby_version, '2.4.9'
 
 namespace :errbit do
   desc "Setup config files (first time setup)"
