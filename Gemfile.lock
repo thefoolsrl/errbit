@@ -103,13 +103,13 @@ GEM
     css_parser (1.7.0)
       addressable
     debug_inspector (0.0.3)
-    decent_exposure (2.3.3)
-    devise (3.5.10)
+    decent_exposure (3.0.2)
+      activesupport (>= 4.0)
+    devise (4.4.3)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
-      railties (>= 3.2.6, < 5)
+      railties (>= 4.1.0, < 6.0)
       responders
-      thread_safe (~> 0.1)
       warden (~> 1.2.3)
     diff-lcs (1.3)
     docile (1.3.2)
@@ -467,8 +467,8 @@ DEPENDENCIES
   capistrano3-puma (~> 1.2)
   capybara (~> 2.4)
   coveralls (~> 0.8)
-  decent_exposure (~> 2.3)
-  devise (~> 3.5)
+  decent_exposure
+  devise (~> 4.4.0)
   dotenv-rails (~> 2.0)
   draper (~> 2.1)
   email_spec (~> 1.6)

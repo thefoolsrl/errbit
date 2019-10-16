@@ -11,7 +11,7 @@ lock '3.4.0'
 
 set :application, 'errbit'
 set :repo_url, 'https://github.com/thefoolsrl/errbit.git'
-set :branch, ENV['branch'] || 'master'
+set :branch, ENV['branch'] || 'upstream_into_master'
 set :deploy_to, '/home/deployer/apps/errbit'
 
 set :keep_releases, 5
