@@ -5,6 +5,8 @@ log/*.log
 tmp/**/*
 tmp/*
 config/config.yml
+config/deploy.rb
+config/deploy
 config/mongoid.yml
 config/newrelic.yml
 .rvmrc
@@ -16,4 +18,6 @@ config/newrelic.yml
 bundle
 coverage
 *#
+.ruby-version
+.tool-versions
 NOTES

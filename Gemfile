@@ -10,8 +10,8 @@ gem 'railties', RAILS_VERSION
 gem 'rails-html-sanitizer', '~> 1.0.3'
 
 gem 'actionmailer_inline_css', "~> 1.5"
-gem 'decent_exposure', "~> 2.3"
-gem 'devise', '~> 3.5'
+gem 'decent_exposure'#, "~> 2.3"
+gem 'devise', '~> 4.4.0'
 gem 'dotenv-rails', "~> 2.0"
 gem 'draper', "~> 2.1"
 gem 'errbit_plugin', "~> 0.6"
@@ -104,7 +104,7 @@ group :heroku, :production do
 end
 
 group :no_docker, :test, :development do
- gem 'therubyracer', "~> 0.12", :platform => :ruby # C Ruby (MRI) or Rubinius, but NOT Windows
+ gem 'therubyracer', "~> 0.12", platform: :ruby # C Ruby (MRI) or Rubinius, but NOT Windows
 end
 
 gem 'puma', "~> 3.4"
