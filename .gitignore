@@ -21,3 +21,4 @@ coverage
 .ruby-version
 .tool-versions
 NOTES
+config/puma.rb
