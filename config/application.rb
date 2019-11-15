@@ -50,5 +50,11 @@ module Errbit
     config.to_prepare { Devise::Mailer.layout 'mailer' }
 
     config.active_job.queue_adapter = :sucker_punch
+    config.action_dispatch.default_headers = {
+      'Referrer-Policy' => 'No-referrer-when-downgrade',
+      'X-XSS-Protection' => '1; mode=block',
+      'X-Frame-Options' => 'DENY',
+      'X-Content-Type-Options' => 'nosniff'
+    }
   end
 end
